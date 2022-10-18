@@ -1,35 +1,30 @@
-/*
- * Ryan Anderson
- * Chapter 2
- * Program 11
- */
 public class AddStrings {
 	private String first, middle, last;
 	private int c, f, m;
 	
-	public AddStrings() { //default constructor, which sets first and last to their default values
+	public AddStrings() {
 		first = null;
 		middle = null;
 		last = null;
 	}
 	
-	public AddStrings(String one, String two ,String three) { //allows the strings to be set when instantiating AddStrings as an object
+	public AddStrings(String one, String two ,String three) {
 		first = one;
 		middle = two;
 		last = three;
 	}
 	
-	public void setStrings(String one, String two ,String three) { //allows the strings to be changed later on instead of using the original strings from the object creation
+	public void setStrings(String one, String two ,String three) {
 		first = one;
 		middle = two;
 		last = three;
 	}
 	
-	public String add() { //combines the strings first and last
+	public String add() {
 		return first + " " + middle + " " + last;
 	}
 	
-	public int findLength() { //finds the length of first and last by using .length(), and adds them together
+	public int findLength() {
 		return first.length() + middle.length() + last.length();
 	}
 
@@ -90,7 +85,7 @@ public class AddStrings {
 	
 	
 	
-	public static void main(String args[]) { //prints toString, and carries out all of the other methods
+	public static void main(String args[]) {
 		AddStrings test = new AddStrings("Maria", "Martha", "Sanchez");
 		test.add();
 		test.findLength();
